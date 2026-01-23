@@ -1,22 +1,22 @@
 import React from "react";
 import HeroSection from "../components/homeComponents/hero";
 import AboutSection from "../components/homeComponents/AboutSection";
-import ServicesSection from "../components/homeComponents/ServicesSection";
-import CallToAction from "../components/homeComponents/CallToAction";
-import TestimonialsSection from "../components/homeComponents/TestimonialsSection";
-import LocationSection from "../components/homeComponents/LocationSection";
+import GatheringsSection from "../components/homeComponents/GatheringsSection";
+import SoupKitchenSection from "../components/homeComponents/SoupKitchenSection";
+import PlanYourVisit from "../components/homeComponents/PlanYourVisit";
+import CTASection from "../components/homeComponents/CallToAction";
 
 const HomePage = () => {
-    return (
-        <div>
-            <HeroSection />
-            <AboutSection />
-            <ServicesSection />
-            <TestimonialsSection />
-            <CallToAction />
-            <LocationSection />
-        </div>
-    )
+  return (
+    <div>
+      <HeroSection />
+      <AboutSection />
+      <GatheringsSection />
+      <SoupKitchenSection />
+      <PlanYourVisit />
+      <CTASection />
+    </div>
+  );
 };
 
 export default HomePage;

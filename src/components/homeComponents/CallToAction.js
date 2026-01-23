@@ -1,43 +1,41 @@
-// import React from "react";
-
-// const CallToAction = () => {
-//   return (
-//     <section className="py-20 px-6 bg-brand text-textLight text-center">
-//       <div className="max-w-4xl mx-auto">
-//         <h2 className="text-3xl md:text-4xl font-bold">
-//           Be Part of the Revival
-//         </h2>
-
-//         <p className="mt-6 text-lg">
-//           Join us as we seek God earnestly and grow together in faith.
-//         </p>
-
-//         <button className="mt-8 px-8 py-4 bg-brand text-textLight rounded-lg font-semibold hover:bg-hoverBrand transition">
-//           Contact Us
-//         </button>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default CallToAction;
 import React from "react";
 
-const CTASection = () => (
-  <section className="py-20 px-6 bg-[#fdf9f2] relative">
-    <div className="max-w-4xl mx-auto text-center bg-[#583030]/5 rounded-xl px-10 py-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#583030] leading-snug">
-        Be Part of The Revival
-      </h2>
-      <p className="mt-6 text-[#3f2323] text-lg md:text-xl leading-relaxed opacity-85">
-        Join us as we seek God earnestly and grow together in faith.
-      </p>
-      <button className="mt-8 px-10 py-4 bg-[#583030] text-[#f5f5ed] rounded-md font-sans transition-transform duration-300 hover:scale-105 hover:bg-[#4f2d2d]">
-        Get Involved
-      </button>
-    </div>
-  </section>
-);
+const CTASection = () => {
+  return (
+    <section className="py-24 px-6 bg-brand">
+      <div className="max-w-4xl mx-auto text-center text-textLight">
+        <h2 className="font-serif text-3xl md:text-4xl font-light leading-snug">
+          Walk With Us in the Pursuit of God
+        </h2>
+
+        <p className="mt-6 text-lg md:text-xl leading-relaxed opacity-90">
+          Adullam Revival Church is a community devoted to the Word, prayer,
+          consecration, and faithful obedience.
+        </p>
+
+        <p className="mt-6 text-lg leading-relaxed opacity-85">
+          Join us this Sunday, connect during the week, and walk alongside a
+          people hungry for truth and revival.
+        </p>
+
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/contact"
+            className="px-10 py-4 bg-textLight text-brand rounded-md font-medium transition-transform duration-300 hover:scale-105"
+          >
+            Plan Your Visit
+          </a>
+
+          <a
+            href="tel:0735117407"
+            className="px-10 py-4 border border-textLight/70 rounded-md font-medium transition-colors duration-300 hover:bg-textLight/10"
+          >
+            Contact the Church
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default CTASection;
-

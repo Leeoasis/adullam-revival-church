@@ -2,21 +2,25 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6 bg-[#fdf9f2] relative z-10">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#583030] leading-tight">
+    <section className="py-28 px-6 bg-[#fdf9f2]">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="font-serif text-4xl md:text-5xl font-light text-brand">
           Who We Are
         </h2>
 
-        <p className="mt-6 text-[#3f2323] text-lg md:text-xl leading-relaxed opacity-90">
-          Adullam Revival Centre exists to nurture spiritual growth, deepen
-          faith, and equip believers for service through biblical teaching,
-          prayer, and community.
+        <p className="mt-10 text-textDark text-lg leading-relaxed opacity-90">
+          Adullam Revival Church is a Word-anchored Christian fellowship devoted
+          to spiritual formation and renewal. Our life together is shaped by a
+          reverence for Scripture, a culture of prayer and fasting, and a
+          commitment to walking in obedience to God’s Word.
         </p>
 
-        <div className="mt-10 flex justify-center">
-          <div className="h-[2px] w-24 bg-[#583030]/30 rounded-full"></div>
-        </div>
+        <p className="mt-8 text-textDark text-lg leading-relaxed opacity-85">
+          We believe true revival begins with consecration — hearts yielded to
+          God, minds renewed by truth, and lives aligned with His will. Our
+          gatherings are marked by sound doctrine, earnest prayer, and a shared
+          hunger for God’s presence.
+        </p>
       </div>
     </section>
   );

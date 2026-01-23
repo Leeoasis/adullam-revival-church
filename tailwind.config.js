@@ -11,6 +11,10 @@ module.exports = {
         hoverBrand: "#6a3b3b",
         heroBg: "#fafaf6",
       },
+      fontFamily: {
+        serif: ["Agatho", "serif"],
+        sans: ["Montserrat", "system-ui", "sans-serif"],
+      },
     },
   },
   plugins: [],
