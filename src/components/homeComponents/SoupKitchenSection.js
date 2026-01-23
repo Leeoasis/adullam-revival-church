@@ -1,18 +1,35 @@
 import React from "react";
 
 const SoupKitchenSection = () => {
+  const images = [
+    "/assets/images/soup2.png",
+    "/assets/images/soup3.png",
+    "/assets/images/soup4.png",
+    "/assets/images/soup5.png",
+  ];
+
   return (
     <section className="py-28 px-6 bg-[#fdf9f2]">
       <div className="max-w-6xl mx-auto grid gap-14 md:grid-cols-[1fr_1.1fr] items-center">
+        
+        {/* Image Grid */}
         <div className="grid grid-cols-2 gap-5">
-          {[1, 2, 3, 4].map((i) => (
+          {images.map((src, index) => (
             <div
-              key={i}
-              className="bg-gray-200 h-40 rounded-lg"
-            />
+              key={index}
+              className="relative h-40 md:h-44 rounded-lg overflow-hidden bg-gray-200"
+            >
+              <img
+                src={src}
+                alt="Community soup kitchen outreach"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
 
+        {/* Text Content */}
         <div>
           <h2 className="font-serif text-3xl md:text-4xl font-light text-brand">
             Living the Gospel Through Service

@@ -2,20 +2,24 @@ import React from "react";
 
 const MinistriesHero = () => {
   return (
-    <section className="relative py-28 px-6 bg-[#583030] text-[#f5f5ed] text-center overflow-hidden">
-      {/* Subtle background depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#4f2d2d] to-[#583030] opacity-90 pointer-events-none"></div>
+    <section className="relative py-28 px-6 bg-brand text-textLight text-center overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#3e2222]/60 to-transparent"></div>
 
       <div className="relative max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Our Ministries
+        <p className="text-xs tracking-[0.3em] uppercase opacity-60 mb-6 font-sans">
+          Life Together
+        </p>
+
+        <h1 className="font-serif text-4xl md:text-5xl font-light leading-tight">
+          How We Gather, Grow, and Serve
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-[#f5f5ed]/80">
-          Serving God through teaching, prayer, and discipleship.
+
+        <p className="mt-8 text-lg md:text-xl text-[#f5f5ed]/85 leading-relaxed">
+          Our ministry is not organised around programmes, but around rhythms
+          shaped by Scripture, prayer, and obedience.
         </p>
       </div>
 
-      {/* Bottom curve transition */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           className="block w-full h-24"
@@ -26,8 +30,8 @@ const MinistriesHero = () => {
           <path
             fill="#fdf9f2"
             fillOpacity="1"
-            d="M0,128 C480,0 960,256 1440,128 L1440,320 L0,320 Z"
-          ></path>
+            d="M0,96 C360,0 1080,192 1440,96 L1440,320 L0,320 Z"
+          />
         </svg>
       </div>
     </section>
