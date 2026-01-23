@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -19,13 +20,15 @@ const CTASection = () => {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/contact"
+          {/* Internal SPA navigation */}
+          <Link
+            to="/contact"
             className="px-10 py-4 bg-textLight text-brand rounded-md font-medium transition-transform duration-300 hover:scale-105"
           >
             Plan Your Visit
-          </a>
+          </Link>
 
+          {/* External action must remain <a> */}
           <a
             href="tel:0735117407"
             className="px-10 py-4 border border-textLight/70 rounded-md font-medium transition-colors duration-300 hover:bg-textLight/10"
